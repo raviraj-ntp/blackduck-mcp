@@ -3,7 +3,7 @@
 Local **read-only** MCP server for **Synopsys Black Duck** — 8 tools for projects, versions, components, and security data.
 
 - Runs on **your machine**
-- **npm:** `@raviraj/blackduck-mcp` — https://www.npmjs.com/package/@raviraj/blackduck-mcp
+- **npm:** `@raviraj87/blackduck-mcp` — https://www.npmjs.com/package/@raviraj87/blackduck-mcp
 - **GitHub:** https://github.com/ravi-netapp/blackduck-mcp
 
 ---
@@ -17,7 +17,7 @@ Edit `~/.cursor/mcp.json`:
   "mcpServers": {
     "blackduck": {
       "command": "npx",
-      "args": ["-y", "@raviraj/blackduck-mcp"],
+      "args": ["-y", "@raviraj87/blackduck-mcp"],
       "env": {
         "BLACKDUCK_URL": "https://blackduck.example.com",
         "BLACKDUCK_API_TOKEN": "your-api-token"
@@ -46,7 +46,7 @@ Use `"command": "node"`, `"args": ["<<YOUR_CLONE_PATH>>/blackduck-mcp/dist/index
 
 | What | Where | Notes |
 |------|--------|-------|
-| Server | `mcp.json` | **npm:** `npx` + `@raviraj/blackduck-mcp` — **or** `node` + clone path |
+| Server | `mcp.json` | **npm:** `npx` + `@raviraj87/blackduck-mcp` — **or** `node` + clone path |
 | `BLACKDUCK_URL` | `env` | Base URL only — no `/api/...` |
 | `BLACKDUCK_API_TOKEN` | `env` | From Black Duck UI |
 
@@ -69,7 +69,7 @@ Use `"command": "node"`, `"args": ["<<YOUR_CLONE_PATH>>/blackduck-mcp/dist/index
   "mcpServers": {
     "blackduck": {
       "command": "npx",
-      "args": ["-y", "@raviraj/blackduck-mcp"],
+      "args": ["-y", "@raviraj87/blackduck-mcp"],
       "env": {
         "BLACKDUCK_URL": "https://blackduck.example.com",
         "BLACKDUCK_API_TOKEN": "your-api-token"

@@ -1,5 +1,5 @@
 {
-  "name": "@raviraj/blackduck-mcp",
+  "name": "@raviraj87/blackduck-mcp",
   "version": "0.1.0",
   "description": "Local MCP server for Black Duck read-only workflows",
   "license": "MIT",
