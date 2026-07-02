@@ -3,11 +3,33 @@
 Local **read-only** MCP server for **Synopsys Black Duck** — 8 tools for projects, versions, components, and security data.
 
 - Runs on **your machine**
-- **MIT license** — https://github.com/ravi-netapp/blackduck-mcp
+- **npm:** `@raviraj/blackduck-mcp` — https://www.npmjs.com/package/@raviraj/blackduck-mcp
+- **GitHub:** https://github.com/ravi-netapp/blackduck-mcp
 
 ---
 
-## Quick start
+## Quick start (npm — recommended)
+
+Edit `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "blackduck": {
+      "command": "npx",
+      "args": ["-y", "@raviraj/blackduck-mcp"],
+      "env": {
+        "BLACKDUCK_URL": "https://blackduck.example.com",
+        "BLACKDUCK_API_TOKEN": "your-api-token"
+      }
+    }
+  }
+}
+```
+
+Restart Cursor. Ask: *"Use blackduck_health"*.
+
+## Install from source (optional)
 
 ```bash
 git clone https://github.com/ravi-netapp/blackduck-mcp.git
@@ -16,7 +38,7 @@ npm install
 npm run build
 ```
 
-Add to `~/.cursor/mcp.json` (below), restart Cursor, ask: *"Use blackduck_health"*.
+Use `"command": "node"`, `"args": ["<<YOUR_CLONE_PATH>>/blackduck-mcp/dist/index.js"]` in `mcp.json`.
 
 ---
 
@@ -24,9 +46,9 @@ Add to `~/.cursor/mcp.json` (below), restart Cursor, ask: *"Use blackduck_health
 
 | What | Where | Notes |
 |------|--------|-------|
-| Clone path | `mcp.json` → `args` | Where **you** cloned this repo |
-| `BLACKDUCK_URL` | `mcp.json` → `env` | Base URL only — no `/api/...`, no trailing `/` |
-| `BLACKDUCK_API_TOKEN` | `env` | Your API token from Black Duck UI |
+| Server | `mcp.json` | **npm:** `npx` + `@raviraj/blackduck-mcp` — **or** `node` + clone path |
+| `BLACKDUCK_URL` | `env` | Base URL only — no `/api/...` |
+| `BLACKDUCK_API_TOKEN` | `env` | From Black Duck UI |
 
 ---
 
@@ -40,14 +62,14 @@ Add to `~/.cursor/mcp.json` (below), restart Cursor, ask: *"Use blackduck_health
 
 ## Cursor setup
 
-Edit `~/.cursor/mcp.json`:
+**npm (recommended):**
 
 ```json
 {
   "mcpServers": {
     "blackduck": {
-      "command": "node",
-      "args": ["<<YOUR_CLONE_PATH>>/blackduck-mcp/dist/index.js"],
+      "command": "npx",
+      "args": ["-y", "@raviraj/blackduck-mcp"],
       "env": {
         "BLACKDUCK_URL": "https://blackduck.example.com",
         "BLACKDUCK_API_TOKEN": "your-api-token"
@@ -57,11 +79,14 @@ Edit `~/.cursor/mcp.json`:
 }
 ```
 
-Replace `<<YOUR_CLONE_PATH>>` with where you cloned the repo.
+**From source:**
+
+```json
+"command": "node",
+"args": ["<<YOUR_CLONE_PATH>>/blackduck-mcp/dist/index.js"]
+```
 
 Restart Cursor. Check **Settings → MCP** for 8 tools.
-
-**Dev mode:** `"command": "npx"`, `"args": ["tsx", "<<YOUR_CLONE_PATH>>/blackduck-mcp/src/index.ts"]`
 
 ### URL format
 
@@ -141,4 +166,5 @@ Typical flow:
 
 ## Publishing
 
-See [PUBLISHING.md](./PUBLISHING.md).
+- GitHub: [PUBLISHING.md](./PUBLISHING.md)
+- npm: [NPM_PUBLISH.md](./NPM_PUBLISH.md)

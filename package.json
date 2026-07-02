@@ -1,8 +1,20 @@
 {
-  "name": "blackduck-mcp",
+  "name": "@raviraj/blackduck-mcp",
   "version": "0.1.0",
   "description": "Local MCP server for Black Duck read-only workflows",
   "license": "MIT",
+  "author": "Ravi Raj",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravi-netapp/blackduck-mcp.git"
+  },
+  "homepage": "https://github.com/ravi-netapp/blackduck-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/ravi-netapp/blackduck-mcp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },
@@ -16,8 +28,17 @@
   ],
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "blackduck-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
