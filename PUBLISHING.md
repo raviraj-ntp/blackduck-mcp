@@ -32,7 +32,7 @@ git init
 git add .
 git commit -m "Initial commit: Black Duck MCP server"
 git branch -M main
-git remote add origin git@github.com:YOUR_USER/blackduck-mcp.git
+git remote add origin git@github.com:ravi-netapp/blackduck-mcp.git
 git push -u origin main
 ```
 

@@ -86,7 +86,7 @@ All credentials stay on your machine.
 ### 1. Clone and build
 
 ```bash
-git clone https://github.com/YOUR_USER/blackduck-mcp.git
+git clone https://github.com/ravi-netapp/blackduck-mcp.git
 cd blackduck-mcp
 npm install
 npm run build
