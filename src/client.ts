@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/blackduck-mcp · client.ts
+ * Black Duck REST API client.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import fetch from "node-fetch";
 import https from "node:https";
 

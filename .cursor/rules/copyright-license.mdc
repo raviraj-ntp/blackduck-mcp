@@ -1,0 +1,59 @@
+---
+description: Professional copyright and file-description headers on new source files
+globs: "**/*.{ts,js,mjs,yaml,yml,env.example}"
+alwaysApply: false
+---
+
+# File headers (MIT)
+
+Every **new** committable source/config/script file must include a header.
+
+## Exceptions (no header required)
+
+- `package.json`, `package-lock.json`, `tsconfig.json` (JSON, no comments)
+- `LICENSE` (full MIT text already present)
+- `.gitignore` (optional one-line comment only)
+- Generated `dist/` (not committed)
+
+## Entry file (`src/index.ts`) — full MIT block
+
+```typescript
+#!/usr/bin/env node
+/**
+ * ------------------------------------------------------------------------------
+ * Package : @raviraj87/<package-name>
+ * File    : index.ts
+ * Purpose : <one-line description>
+ *
+ * Copyright (c) 2026 Ravi Raj
+ * ...full MIT license text...
+ * SPDX-License-Identifier: MIT
+ * ------------------------------------------------------------------------------
+ */
+```
+
+## All other TypeScript / JavaScript
+
+```typescript
+/**
+ * @raviraj87/<package-name> · <filename>
+ * <One-line purpose describing this file's responsibility.>
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+```
+
+## YAML / `.env.example`
+
+```yaml
+# @raviraj87/<package-name> · config.example.yaml
+# <One-line purpose>
+#
+# Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+```
+
+## Rules
+
+- Replace `<package-name>` and purpose per repo/file.
+- Do not remove headers when editing.
+- Keep purpose accurate when file responsibility changes.

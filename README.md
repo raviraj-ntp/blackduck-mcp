@@ -164,6 +164,12 @@ Typical flow:
 
 ---
 
+---
+
+## License
+
+Copyright © 2026 Ravi Raj. Licensed under the [MIT License](LICENSE).
+
 ## Publishing (maintainers)
 
 Repo: https://github.com/raviraj-ntp/blackduck-mcp · npm: `@raviraj87/blackduck-mcp`

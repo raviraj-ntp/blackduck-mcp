@@ -1,3 +1,10 @@
+/**
+ * @raviraj87/blackduck-mcp · scripts/test-readonly.mjs
+ * Read-only integration smoke test script.
+ *
+ * Copyright (c) 2026 Ravi Raj · MIT License · see LICENSE
+ */
+
 import { BlackDuckClient } from "../dist/client.js";
 
 const baseUrl = process.env.BLACKDUCK_URL;
