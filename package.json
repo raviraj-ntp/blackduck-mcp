@@ -6,11 +6,11 @@
   "author": "Ravi Raj",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ravi-netapp/blackduck-mcp.git"
+    "url": "git+https://github.com/raviraj-ntp/blackduck-mcp.git"
   },
-  "homepage": "https://github.com/ravi-netapp/blackduck-mcp#readme",
+  "homepage": "https://github.com/raviraj-ntp/blackduck-mcp#readme",
   "bugs": {
-    "url": "https://github.com/ravi-netapp/blackduck-mcp/issues"
+    "url": "https://github.com/raviraj-ntp/blackduck-mcp/issues"
   },
   "publishConfig": {
     "access": "public"

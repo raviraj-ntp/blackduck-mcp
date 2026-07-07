@@ -4,7 +4,7 @@ Local **read-only** MCP server for **Synopsys Black Duck** — 8 tools for proje
 
 - Runs on **your machine**
 - **npm:** `@raviraj87/blackduck-mcp` — https://www.npmjs.com/package/@raviraj87/blackduck-mcp
-- **GitHub:** https://github.com/ravi-netapp/blackduck-mcp
+- **GitHub:** https://github.com/raviraj-ntp/blackduck-mcp
 
 ---
 
@@ -32,7 +32,7 @@ Restart Cursor. Ask: *"Use blackduck_health"*.
 ## Install from source (optional)
 
 ```bash
-git clone https://github.com/ravi-netapp/blackduck-mcp.git
+git clone https://github.com/raviraj-ntp/blackduck-mcp.git
 cd blackduck-mcp
 npm install
 npm run build
