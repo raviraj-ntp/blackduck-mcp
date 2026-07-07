@@ -164,7 +164,20 @@ Typical flow:
 
 ---
 
-## Publishing
+## Publishing (maintainers)
 
-- GitHub: [PUBLISHING.md](./PUBLISHING.md)
-- npm: [NPM_PUBLISH.md](./NPM_PUBLISH.md)
+Repo: https://github.com/raviraj-ntp/blackduck-mcp · npm: `@raviraj87/blackduck-mcp`
+
+```bash
+git status
+npm run build
+git push origin main
+
+npm whoami    # raviraj87
+npm version patch    # required before republish
+npm publish --access public
+# 2FA: npm publish --access public --otp=XXXXXX
+```
+
+New GitHub repo: `gh repo create raviraj-ntp/blackduck-mcp --public --source=. --remote=origin --push`  
+Remote (HTTPS): `https://github.com/raviraj-ntp/blackduck-mcp.git`
