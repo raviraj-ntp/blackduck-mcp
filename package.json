@@ -1,7 +1,7 @@
 {
   "name": "@raviraj87/blackduck-mcp",
-  "version": "1.0.1",
-  "description": "Local MCP server for Black Duck read-only workflows",
+  "version": "1.1.0",
+  "description": "Local MCP server for Black Duck vulnerability, BOM, policy, and remediation workflows",
   "license": "MIT",
   "author": "Ravi Raj",
   "repository": {
